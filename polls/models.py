@@ -9,7 +9,7 @@ class Question(models.Model):
     
     def __str__(self):
         return "[{date}]: {text}".format(
-            date = str(self.pub_date)
+            date = str(self.pub_date),
             text = self.question_text
         )
         
